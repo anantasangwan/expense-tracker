@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+    --income: #16A34A;
+    --expense: #EF4444;
+    --border: #E5E7EB;
+    --header: #EFF5F7;
+    --txt: #515762;
+}
+
+.dark {
+    --income: #22C55E;
+    --expense: #F87171;
+    --border: #374151;
+    --header: #273449;
+    --txt: #CBD5E1;
+}
+
+@theme inline {
+    --color-incometxt: var(--income);
+    --color-expensetxt: var(--expense);
+    --color-headerbg: var(--header);
+    --color-border: var(--border);
+    --color-txt: var(--txt);
+}
+
+.income {
+    @apply font-semibold text-incometxt;
+}
+
+.expense {
+    @apply font-semibold text-expensetxt;
+}
+
+td {
+    @apply text-center wrap-break-word border-t border-border text-txt font-medium px-1 py-2.5 max-sm:text-sm;
+}

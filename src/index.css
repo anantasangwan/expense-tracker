@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+/* --- Activate the 'dark:' variant when the element itself has .dark, or when it is inside an element that has .dark --- */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+    --font-sora: "Sora", sans-serif;
+    --breakpoint-xs: 420px;
+}
+
+:root {
+    --bg: #F0F4F7;
+    --container: #FFFFFF;
+    --navbar-bg: #8463fb;
+    --primary-txt: #7a57fa;
+    --black-txt: #000000;
+    --grey-txt: #354453;
+    --income-bg: #F8F8F8;
+    --expense-bg: #FFEDED;
+    --btntxt:  #FFFFFF;
+    --inputbg: #FFFFFF;
+    --inputtxt: #434242;
+    --input-border: #e5e7ea;
+    --input-shadow: #d4d6d9;
+    --modebg: #997dfe;
+}
+
+.dark {
+    --bg: #111827;
+    --container: #1F2937;
+    --navbar-bg: #181E2B;
+    --primary-txt: #8B6CFF;
+    --black-txt: #F9FAFB;
+    --grey-txt: #CBD5E1;
+    --income-bg: #25282C;
+    --expense-bg: #3A2427;
+    --btntxt:  #FFFFFF;
+    --inputbg: #273449;
+    --inputtxt: #CBD5E1;
+    --input-border: #475569;
+    --input-shadow: #1a2332;
+}
+/* 
+Page: #111827
+Navbar: #181E2B
+Container: #1F2937
+Primary purple: #8B6CFF
+
+--nav-dark: #241D3D;
+--nav-dark: #181E2B;
+| Element          | Dark mode |
+| ---------------- | --------- |
+| Background       | `` |
+| Main container   | `` |
+| Primary purple   | `` |
+| Main text        | `` |
+| Secondary text   | `` |
+| Input background | `` |
+| Input border     | `#475569` |
+| Income           | `` |
+| Expense          | `#F87171` |
+| Expense card bg  | `` |
+| Income card bg   | `` |
+| Table header     | `` |
+| Table border     | `` | */
+
+
+#root {
+    @apply flex flex-col items-center ;
+}
+
+/* --- Use @theme inline when defining colors that reference other colors --- */
+@theme inline {
+    --color-bg: var(--bg);
+    --color-container: var(--container);
+    --color-navbar-bg: var(--navbar-bg);
+    --color-primary-txt: var(--primary-txt);
+    --color-black-txt: var(--black-txt);
+    --color-income-bg: var(--income-bg);
+    --color-expense-bg: var(--expense-bg);
+    --color-grey-txt: var(--grey-txt);
+    --color-btntxt: var(--btntxt);
+    --color-inputbg: var(--inputbg);
+    --color-inputtxt: var(--inputtxt);
+    --color-input-border: var(--input-border);
+    --color-input-shadow: var(--input-shadow);
+    --color-modebg: var(--modebg);
+}
+
+@layer {
+    .btn {
+        @apply bg-primary-txt text-btntxt font-semibold text-sm w-fit px-3.5 py-1.5 rounded-lg mt-3 cursor-pointer hover:shadow-md hover:shadow-mauve-400 hover:scale-105 transition-all duration-150 ease-in-out;
+    }
+
+    .input {
+        @apply w-full outline-none bg-inputbg text-inputtxt border border-input-border px-3.5 py-2 rounded-md text-sm font-medium inset-shadow-sm inset-shadow-input-shadow;
+    }
+}
