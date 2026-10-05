@@ -35,3 +35,9 @@
 td {
     @apply text-center wrap-break-word border-t border-border text-txt font-medium px-1 py-2.5 max-sm:text-sm;
 }
+
+@media screen and (max-width: 370px) {
+    td:first-child {
+        font-size: 12px;
+    }
+}

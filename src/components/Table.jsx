@@ -24,7 +24,7 @@ const Table = () => {
                             transactions.map((trans, index) => {
                                 return (
                                     <tr key={index}>
-                                        <td className="max-xs:text-[12px]">{trans.date}</td>
+                                        <td>{trans.date}</td>
                                         <td>{trans.description}</td>
                                         <td className={trans.type}>{trans.type === "income" ? "+" : "-"} ${trans.amount.toLocaleString("en-US")}</td>
                                     </tr>

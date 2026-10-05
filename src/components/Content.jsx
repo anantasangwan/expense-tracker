@@ -26,7 +26,7 @@ const Content = () => {
     if (!localStorage.getItem("income"))
         return (
             <div className="self-center flex flex-col bg-income-bg rounded-lg shadow-md px-6 py-4 mt-5 mb-10">
-                <h3 className="text-black-txt font-bold mb-2">Enter your income amount <span className="text-xs">(in digits)</span> :</h3>
+                <h3 className="text-black-txt font-bold mb-2">Enter your income <span className="text-xs">(in digits)</span> :</h3>
                 <input ref={inputRef} type="text" name="income" placeholder='e.g. 50000' className="input" />
                 <button onClick={handleClick} className="btn self-center">Confirm</button>
             </div>
