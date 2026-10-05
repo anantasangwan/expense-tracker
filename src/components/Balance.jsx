@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Balance = ({balance}) => {
     return (
         <div className="balance self-center flex flex-col cursor-pointer">

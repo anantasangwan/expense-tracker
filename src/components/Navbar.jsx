@@ -1,13 +1,14 @@
 import { useState } from 'react';
 
 const Navbar = () => {
+  // default light mode
   const [darkMode, setDarkMode] = useState(false);
 
   function changeMode() {
     let html = document.documentElement;
     html.classList.toggle("dark");
 
-    // React re-renders → icon changes
+    // React re-renders → mode icon changes
     setDarkMode(prev => !prev);
   }
 

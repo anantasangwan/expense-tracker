@@ -43,30 +43,6 @@
     --input-border: #475569;
     --input-shadow: #1a2332;
 }
-/* 
-Page: #111827
-Navbar: #181E2B
-Container: #1F2937
-Primary purple: #8B6CFF
-
---nav-dark: #241D3D;
---nav-dark: #181E2B;
-| Element          | Dark mode |
-| ---------------- | --------- |
-| Background       | `` |
-| Main container   | `` |
-| Primary purple   | `` |
-| Main text        | `` |
-| Secondary text   | `` |
-| Input background | `` |
-| Input border     | `#475569` |
-| Income           | `` |
-| Expense          | `#F87171` |
-| Expense card bg  | `` |
-| Income card bg   | `` |
-| Table header     | `` |
-| Table border     | `` | */
-
 
 #root {
     @apply flex flex-col items-center ;
