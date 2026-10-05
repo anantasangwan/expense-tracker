@@ -32,25 +32,25 @@ _A simple and responsive expense tracker built with **React** and **Tailwind CSS
 
 ## 📁 Project Structure
 
-src/
-├── assets/
-│   ├── hamburger.svg
-│   ├── logo.svg
-│   ├── chand.svg
-│   └── suraj.svg
-│
-├── components/
-│   ├── Add.jsx
-│   ├── Balance.jsx
-│   ├── Cards.jsx
-│   ├── Content.jsx
-│   ├── Navbar.jsx
-│   ├── Table.jsx
-│   └── Table.css
-│
-├── App.jsx
-├── index.css
-└── main.jsx
+    src/
+    ├── assets/
+    │   ├── hamburger.svg
+    │   ├── logo.svg
+    │   ├── chand.svg
+    │   └── suraj.svg
+    │
+    ├── components/
+    │   ├── Add.jsx
+    │   ├── Balance.jsx
+    │   ├── Cards.jsx
+    │   ├── Content.jsx
+    │   ├── Navbar.jsx
+    │   ├── Table.jsx
+    │   └── Table.css
+    │
+    ├── App.jsx
+    ├── index.css
+    └── main.jsx
 
 ---
 
@@ -108,19 +108,19 @@ The interface uses responsive Tailwind CSS utilities to provide a usable experie
 
 ### 1. Clone the repository
 
-git clone - https://github.com/anantasangwan/expense-tracker.git
+    git clone - https://github.com/anantasangwan/expense-tracker.git
 
 ### 2. Navigate to the project
 
-cd expense-tracker
+    cd expense-tracker
 
 ### 3. Install dependencies
 
-npm install
+    npm install
 
 ### 4. Start the development server
 
-npm run dev
+    npm run dev
 
 Open the local URL provided by Vite in your browser.
 
